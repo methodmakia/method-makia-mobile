@@ -1,6 +1,6 @@
 {
     "name": "method-makia",
-    "version": "1.0.0",
+    "version": "0.9.2",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "node_modules/.bin/cordova prepare",
@@ -10,6 +10,7 @@
         "build:ios": "node_modules/.bin/phonegap remote install ios"
     },
     "dependencies": {
+        "cordova": "^6.5.0",
         "phonegap": "^6.5.1"
     }
 }
