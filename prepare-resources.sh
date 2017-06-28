@@ -35,13 +35,19 @@ convert res/icon.png -resize 167x167 res/icon/ios/icon-83.5-2x.png
 
 # Android splash
 mkdir -p res/screen/android/
+convert res/splash-screen.png -resize 108x108 -gravity center -background "rgb(0,0,0)" -extent 320x200 res/screen/android/splash-land-ldpi.png
+convert res/splash-screen.png -resize 144x144 -gravity center -background "rgb(0,0,0)" -extent 320x480 res/screen/android/splash-land-mdpi.png
+convert res/splash-screen.png -resize 216x216 -gravity center -background "rgb(0,0,0)" -extent 480x800 res/screen/android/splash-land-hdpi.png
+convert res/splash-screen.png -resize 192x192 -gravity center -background "rgb(0,0,0)" -extent 720x1280 res/screen/android/splash-land-xhdpi.png
+convert res/splash-screen.png -resize 288x288 -gravity center -background "rgb(0,0,0)" -extent 960x1600 res/screen/android/splash-land-xxhdpi.png
+convert res/splash-screen.png -resize 576x576 -gravity center -background "rgb(0,0,0)" -extent 1280x1920 res/screen/android/splash-land-xxxhdpi.png
 
-convert res/splash-screen.9.png -resize 108x108 res/screen/android/ldpi.9.png
-convert res/splash-screen.9.png -resize 144x144 res/screen/android/mdpi.9.png
-convert res/splash-screen.9.png -resize 216x216 res/screen/android/hdpi.9.png
-convert res/splash-screen.9.png -resize 192x192 res/screen/android/xhdpi.9.png
-convert res/splash-screen.9.png -resize 288x288 res/screen/android/xxhdpi.9.png
-convert res/splash-screen.9.png -resize 576x576 res/screen/android/xxxhdpi.9.png
+convert res/splash-screen.png -resize 108x108 -gravity center -background "rgb(0,0,0)" -extent 320x200 res/screen/android/splash-port-ldpi.png
+convert res/splash-screen.png -resize 144x144 -gravity center -background "rgb(0,0,0)" -extent 480x320 res/screen/android/splash-port-mdpi.png
+convert res/splash-screen.png -resize 216x216 -gravity center -background "rgb(0,0,0)" -extent 800x480 res/screen/android/splash-port-hdpi.png
+convert res/splash-screen.png -resize 192x192 -gravity center -background "rgb(0,0,0)" -extent 1280x720 res/screen/android/splash-port-xhdpi.png
+convert res/splash-screen.png -resize 288x288 -gravity center -background "rgb(0,0,0)" -extent 1600x960 res/screen/android/splash-port-xxhdpi.png
+convert res/splash-screen.png -resize 576x576 -gravity center -background "rgb(0,0,0)" -extent 1920x1280 res/screen/android/splash-port-xxxhdpi.png
 
 # iOS splash
 mkdir -p res/screen/ios/
