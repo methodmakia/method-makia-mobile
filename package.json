@@ -5,6 +5,11 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "node_modules/.bin/cordova prepare",
         "android": "node_modules/.bin/cordova run android",
-        "ios": "node_modules/.bin/cordova run ios"
+        "ios": "node_modules/.bin/cordova run ios",
+        "build:android": "node_modules/.bin/phonegap remote run android",
+        "build:ios": "node_modules/.bin/phonegap remote install ios"
+    },
+    "dependencies": {
+        "phonegap": "^6.5.1"
     }
 }
