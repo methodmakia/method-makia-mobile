@@ -14,7 +14,7 @@ document.addEventListener("deviceready", function() {
     // But also hide after two seconds, just in case
     window.setTimeout(function() {
         navigator.splashscreen.hide();
-    }, 2000);
+    }, 10000);
     // Keep screen on while application is active
     window.plugins.insomnia.keepAwake();
 }, false);
