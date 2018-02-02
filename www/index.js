@@ -17,10 +17,10 @@ document.addEventListener("deviceready", function() {
     ref.addEventListener('loadstop', function() {
         hideSplash();
     });
-    // But also hide after two seconds, just in case 3
-   // window.setTimeout(function() {
-   //     hideSplash();
-   // }, 15000);
+    // But also hide after two seconds, just in case 2
+    window.setTimeout(function() {
+        hideSplash();
+    }, 15000);
 
     // Close app when web page closes
     ref.addEventListener('exit', function() {
