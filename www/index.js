@@ -18,9 +18,10 @@ document.addEventListener("deviceready", function() {
         hideSplash();
     });
     // But also hide after two seconds, just in case
-    window.setTimeout(function() {
-        hideSplash();
-    }, 10000);
+   // window.setTimeout(function() {
+  //      hideSplash();
+   // }, 10000);
+   //
 
     // Close app when web page closes
     ref.addEventListener('exit', function() {
