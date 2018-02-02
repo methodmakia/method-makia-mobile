@@ -17,7 +17,7 @@ document.addEventListener("deviceready", function() {
     ref.addEventListener('loadstop', function() {
         hideSplash();
     });
-    // But also hide after two seconds, just in case
+    // But also hide after two seconds, just in case 2
     window.setTimeout(function() {
         hideSplash();
     }, 15000);
